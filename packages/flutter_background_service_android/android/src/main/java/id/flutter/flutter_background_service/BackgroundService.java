@@ -44,7 +44,7 @@ public class BackgroundService extends Service implements MethodChannel.MethodCa
     private DartExecutor.DartCallback dartCallback;
     private boolean isManuallyStopped = false;
 
-    String notificationTitle = "Background Service";
+    String notificationTitle = "Helpoo";
     String notificationContent = "Running";
     private static final String LOCK_NAME = BackgroundService.class.getName()
             + ".Lock";
@@ -114,7 +114,7 @@ public class BackgroundService extends Service implements MethodChannel.MethodCa
     public void onCreate() {
         super.onCreate();
         createNotificationChannel();
-        notificationContent = "Preparing";
+        notificationContent = "Running";
         updateNotificationInfo();
     }
 
